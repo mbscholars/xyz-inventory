@@ -8,19 +8,19 @@
 This project is built with Laravel application framework and it is expected to serve as an inventory management system for a restaurant. 
 It is built with the following features
  - Authentication for Drivers, Users (customers) and Admin
-        - Authentication was implemented using Laravel Passport for the APIs and designated role is specified using a field ('role') in the database
-        - Gates were used to ensure that only the authorized user role get to execute designated methods
-        - Policies were also used to ensure and enforce database integrity. There are three policies created: 
-            1. DeliveryPolicy: To ensure that only the customer who created the delivery order can edit or make changes to it, to also ensure that delivered orders or completed deliveries cannot be edited.
-            2. OrderPolicy etc.. You can find these in the policies folder
+ -- Authentication was implemented using Laravel Passport for the APIs and designated role is specified using a field ('role') in the database
+ -- Gates were used to ensure that only the authorized user role get to execute designated methods
+ -- Policies were also used to ensure and enforce database integrity. There are three policies created: 
+1. DeliveryPolicy: To ensure that only the customer who created the delivery order can edit or make changes to it, to also ensure that delivered orders or completed deliveries cannot be edited.
+2. OrderPolicy etc.. You can find these in the policies folder
 
      
 ## Installation
 
 To install, clone the repository to your server
-Run **composer install
-To deploy **php artisan passport:install  
-To create the database tables **php artisan migrate
+Run ```composer install```
+To deploy ```php artisan passport:install ``` 
+To create the database tables ```php artisan migrate``` as you would a laravel application
 
 
 ## Controllers
